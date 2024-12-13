@@ -1,0 +1,432 @@
+/* General body and layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8FAFC; /* Light background */
+    color: #333; /* Dark text for readability */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #9AA6B2; /* Muted slate blue */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: #BCCCDC; /* Light grayish-blue */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: #D9EAFD; /* Soft blue hover effect */
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin: 40px 0;
+    background-color: #D9EAFD; /* Soft blue */
+    color: #333;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Welcome Message */
+.welcome-message {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Main Content Section */
+.main-content {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1em;
+    color: #444;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #BCCCDC; /* Light grayish-blue border */
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+button,
+input[type="submit"] {
+    background-color: #9AA6B2; /* Muted slate blue for buttons */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #BCCCDC; /* Light grayish-blue for hover */
+}
+
+/* Dashboard Links */
+.dashboard-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-links .btn {
+    padding: 12px 25px;
+    margin: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.primary-btn {
+    background-color: #D9EAFD; /* Soft blue */
+    color: white;
+}
+
+.secondary-btn {
+    background-color: #BCCCDC; /* Light grayish-blue */
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #9AA6B2; /* Muted slate blue for hover */
+}
+
+.secondary-btn:hover {
+    background-color: #D9EAFD; /* Soft blue for hover */
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #BCCCDC; /* Light grayish-blue border */
+    text-align: left;
+}
+
+.table th {
+    background-color: #9AA6B2; /* Muted slate blue header */
+    color: white;
+    font-size: 1.2em;
+}
+
+.table tr:nth-child(even) {
+    background-color: #F8FAFC; /* Light background for even rows */
+}
+
+.table tr:hover {
+    background-color: #D9EAFD; /* Soft blue hover effect */
+}
+
+/* Action Button for Managing Applications */
+.action-btn {
+    padding: 8px 15px;
+    background-color: #9AA6B2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #BCCCDC; /* Light grayish-blue hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #BCCCDC; /* Light grayish-blue */
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .navbar-links {
+        margin-top: 10px;
+    }
+
+    .table th, .table td {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .dashboard-links .btn {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
+
+
+/* Login Page Specific Styles */
+
+
+
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+/* Login Box */
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Set max width for the form */
+    text-align: center;
+}
+
+/* Login Form */
+
+/* Apply box-sizing globally */
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1em;
+    color: #444;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #BCCCDC;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+input[type="submit"] {
+    background-color: #9AA6B2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #BCCCDC;
+}
+
+/* Register Link */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: #9AA6B2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Register Page Specific Styles */
+
+/* Register Container */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Register Box */
+.register-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Set max width for the form */
+    text-align: center;
+}
+
+/* Register Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1em;
+    color: #444;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #BCCCDC;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+input[type="submit"] {
+    background-color: #9AA6B2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #BCCCDC;
+}
+
+/* Register Link */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: #9AA6B2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.website-header {
+    text-align: center;
+    padding: 40px 0;  /* Add space above and below for balance */
+    background-color: #9AA6B2;  /* Use the color you provided */
+    color: white;  /* Text color */
+    font-size: 36px;  /* Slightly smaller for a clean look */
+    font-family: 'Arial', sans-serif;  /* Clean font */
+    font-weight: 500;  /* Lighter weight for a more refined feel */
+    letter-spacing: 1px;  /* Slightly spaced letters */
+    text-transform: uppercase;  /* Capitalized text for style */
+    border-bottom: 2px solid #6F7D8C;  /* Subtle border below */
+    margin-bottom: 30px;  /* Space below the header */
+}
+
+.website-header h1 {
+    margin: 0;  /* Remove default margin for better spacing */
+    padding: 0;  /* Remove default padding */
+}
+
+
+
+
